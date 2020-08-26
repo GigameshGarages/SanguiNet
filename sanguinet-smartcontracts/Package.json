@@ -1,5 +1,5 @@
 {
-  "name": "harmony-erc20",
+  "name": "sanguinet-harmony",
   "version": "1.0.0",
   "description": "Harmony sample ERC20 deploy",
   "main": "truffle.js",
@@ -8,5 +8,20 @@
     "tslib": "^1.10.0",
     "dotenv": "^8.1.0",
     "openzeppelin-solidity": "^2.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "new sanguinet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FusionLedger/Harmony-DecentralHacks2020/tree/master/sanguinet-smartcontracts"
+  },
+  "keywords": [
+    "sanguinet"
+  ],
+  "author": "Gokul Alex",
+  "license": "ISC"
 }
