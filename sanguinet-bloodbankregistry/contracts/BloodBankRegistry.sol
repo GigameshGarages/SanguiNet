@@ -4,20 +4,29 @@ import './BloodBankDonorFeedOracle.sol';
 import './BloodBankDonorProofVerifier.sol';
 
 contract BloodBankRegistry  {
-    uint public numberOfDonors;
-    address[] public DonorAddress;
+  uint public creationTime = now;
+  
+  modifier onlyBefore(uint _time) { 
+    require(now < _time); _; 
+  }
+  
+  modifier onlyAfter(uint _time) { 
+    require(now > _time); _; 
+  }
+  
+  modifier onlyBy(address account) { 
+    require(msg.sender == account);  _; 
+  }
+  
+  modifier condition(bool _condition) { 
+    require(_condition); _; 
+  }
+  
+  modifier minAmount(uint _amount) { 
+    require(msg.value >= _amount); _; 
+  }
 
-    event DonorAdded(address _donorAddress, uint id);
-
-    function addDonor(address _donorAddress) public  returns (uint) {
-        uint id = numberOfDonors.length ++;
-        numberOfDonors[id] = _donorAddress;
-        numberOfDonors = id + 1;
-        DonorAdded(_donorAddress, id);
-        return id;
-    }
-
-    function getDonorDetails() public pure returns (address[]) {
-        return DonorAddress;
-    }
+  function f() payable onlyAfter(creationTime + 1 minutes) onlyBy(owner) minAmount(1 ether) condition(msg.sender.balance >= 5 ether) {
+    emit BloodBankDonorFeedOracle.updateDonorProfile();
+  }
 }
