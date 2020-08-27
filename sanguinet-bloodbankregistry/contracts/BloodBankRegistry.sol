@@ -1,5 +1,8 @@
 pragma solidity ^0.4.15;
 
+import './BloodBankDonorFeedOracle.sol';
+import './BloodBankDonorProofVerifier.sol';
+
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 
 contract BloodBankRegistry  {
