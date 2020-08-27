@@ -1,9 +1,7 @@
-pragma solidity ^0.4.15;
+pragma solidity ^0.5.16;
 
 import './BloodBankDonorFeedOracle.sol';
 import './BloodBankDonorProofVerifier.sol';
-
-import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 
 contract BloodBankRegistry  {
     uint public numberOfDonors;
@@ -19,7 +17,7 @@ contract BloodBankRegistry  {
         return id;
     }
 
-    function getDonorDetails() public constant returns (address[]) {
+    function getDonorDetails() public pure returns (address[]) {
         return DonorAddress;
     }
 }
