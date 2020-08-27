@@ -26,8 +26,8 @@ contract BloodBankRegistry  {
     require(msg.value >= _amount); _; 
   }
 
-  function Activity() public payable 
+  function IsRegistryValid( ) public payable 
         onlyAfter(creationTime + 1 minutes)  {
-    emit BloodBankDonorFeedOracle.updateDonorProfile();
+        return true;
   }
 }
