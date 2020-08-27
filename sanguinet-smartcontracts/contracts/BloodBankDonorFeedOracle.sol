@@ -1,6 +1,6 @@
 pragma solidity ^0.5.2;
 
-import "BeaconContract.sol";
+import "./BeaconContract.sol";
 
 contract Beacon{
     function getLatestRandomness()external view returns(uint256,bytes32){}
