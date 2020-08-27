@@ -16,7 +16,6 @@ contract BloodBankRegistry  {
   
   modifier onlyBy(address account) { 
     require(msg.sender == account);  _; 
-    BloodBankDonorProofVerifier.verify();
   }
   
   modifier condition(bool _condition) { 
