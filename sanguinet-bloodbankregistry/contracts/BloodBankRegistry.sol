@@ -16,6 +16,7 @@ contract BloodBankRegistry  {
   
   modifier onlyBy(address account) { 
     require(msg.sender == account);  _; 
+    BloodBankDonorProofVerifier.verify();
   }
   
   modifier condition(bool _condition) { 
@@ -26,7 +27,10 @@ contract BloodBankRegistry  {
     require(msg.value >= _amount); _; 
   }
 
-  function f() payable onlyAfter(creationTime + 1 minutes) onlyBy(owner) minAmount(1 ether) condition(msg.sender.balance >= 5 ether) {
+  function Activity() public payable 
+        onlyAfter(creationTime + 1 minutes) 
+        onlyBy(owner) minAmount(1 ether) 
+        condition(msg.sender.balance >= 5 ether) {
     emit BloodBankDonorFeedOracle.updateDonorProfile();
   }
 }
