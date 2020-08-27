@@ -26,8 +26,7 @@ contract BloodBankRegistry  {
     require(msg.value >= _amount); _; 
   }
 
-  function IsRegistryValid( ) public payable 
-        onlyAfter(creationTime + 1 minutes)  {
+  function IsRegistryValid ( ) onlyAfter(creationTime + 1 minutes) public returns (bool)  {
         return true;
   }
 }
