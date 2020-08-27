@@ -1,0 +1,536 @@
+{
+  "contractName": "PublicInputOffsets",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gokulalex/Apps/2020_india_hacks/Harmony-DecentralHacks2020/sanguinet-smartcontracts/contracts/PublicInputOffsets.sol\":\"PublicInputOffsets\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gokulalex/Apps/2020_india_hacks/Harmony-DecentralHacks2020/sanguinet-smartcontracts/contracts/PublicInputOffsets.sol\":{\"keccak256\":\"0x6d07e5f90744cca81370b7df209aa3b0b7787c32da13ff1af57f3210610f98bb\",\"urls\":[\"bzz-raw://cfc7a79c9086c0af6b156926b6836c727d0e89ef76d21b88839858a81519a675\",\"dweb:/ipfs/QmP8B4KHafA27epQyB4ZXe2aK7qgcNc3dDbRDa5SYYnx4b\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820a81d6ba3d13af0b9a337b98c0ed267799141f48e6b3e6784f744e0d73c4b9a4f64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820a81d6ba3d13af0b9a337b98c0ed267799141f48e6b3e6784f744e0d73c4b9a4f64736f6c63430005100032",
+  "sourceMap": "26:389:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:389:5;;;;;;;",
+  "deployedSourceMap": "26:389:5:-;;;;;",
+  "source": "pragma solidity ^0.5.2;\n\n\ncontract PublicInputOffsets {\n    // The following constants are offsets of data expected in the public input.\n    uint256 internal constant OFFSET_LOG_TRACE_LENGTH = 0;\n    uint256 internal constant OFFSET_VDF_OUTPUT_X = 1;\n    uint256 internal constant OFFSET_VDF_OUTPUT_Y = 2;\n    uint256 internal constant OFFSET_VDF_INPUT_X = 3;\n    uint256 internal constant OFFSET_VDF_INPUT_Y = 4;\n}\n",
+  "sourcePath": "/Users/gokulalex/Apps/2020_india_hacks/Harmony-DecentralHacks2020/sanguinet-smartcontracts/contracts/PublicInputOffsets.sol",
+  "ast": {
+    "absolutePath": "/Users/gokulalex/Apps/2020_india_hacks/Harmony-DecentralHacks2020/sanguinet-smartcontracts/contracts/PublicInputOffsets.sol",
+    "exportedSymbols": {
+      "PublicInputOffsets": [
+        2963
+      ]
+    },
+    "id": 2964,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2947,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2963,
+        "linearizedBaseContracts": [
+          2963
+        ],
+        "name": "PublicInputOffsets",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2950,
+            "name": "OFFSET_LOG_TRACE_LENGTH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "141:53:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2948,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "141:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 2949,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "193:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2953,
+            "name": "OFFSET_VDF_OUTPUT_X",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "200:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2951,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "200:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31",
+              "id": 2952,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "248:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2956,
+            "name": "OFFSET_VDF_OUTPUT_Y",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "255:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2954,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 2955,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "303:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2959,
+            "name": "OFFSET_VDF_INPUT_X",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "310:48:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2957,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "310:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "33",
+              "id": 2958,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "357:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3_by_1",
+                "typeString": "int_const 3"
+              },
+              "value": "3"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2962,
+            "name": "OFFSET_VDF_INPUT_Y",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "364:48:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2960,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "364:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "34",
+              "id": 2961,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "411:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
+              },
+              "value": "4"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2964,
+        "src": "26:389:5"
+      }
+    ],
+    "src": "0:416:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/gokulalex/Apps/2020_india_hacks/Harmony-DecentralHacks2020/sanguinet-smartcontracts/contracts/PublicInputOffsets.sol",
+    "exportedSymbols": {
+      "PublicInputOffsets": [
+        2963
+      ]
+    },
+    "id": 2964,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2947,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2963,
+        "linearizedBaseContracts": [
+          2963
+        ],
+        "name": "PublicInputOffsets",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2950,
+            "name": "OFFSET_LOG_TRACE_LENGTH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "141:53:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2948,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "141:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 2949,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "193:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2953,
+            "name": "OFFSET_VDF_OUTPUT_X",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "200:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2951,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "200:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "31",
+              "id": 2952,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "248:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_1_by_1",
+                "typeString": "int_const 1"
+              },
+              "value": "1"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2956,
+            "name": "OFFSET_VDF_OUTPUT_Y",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "255:49:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2954,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "32",
+              "id": 2955,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "303:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_2_by_1",
+                "typeString": "int_const 2"
+              },
+              "value": "2"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2959,
+            "name": "OFFSET_VDF_INPUT_X",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "310:48:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2957,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "310:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "33",
+              "id": 2958,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "357:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_3_by_1",
+                "typeString": "int_const 3"
+              },
+              "value": "3"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2962,
+            "name": "OFFSET_VDF_INPUT_Y",
+            "nodeType": "VariableDeclaration",
+            "scope": 2963,
+            "src": "364:48:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2960,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "364:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "34",
+              "id": 2961,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "411:1:5",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
+              },
+              "value": "4"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2964,
+        "src": "26:389:5"
+      }
+    ],
+    "src": "0:416:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2020-08-27T13:51:34.545Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
