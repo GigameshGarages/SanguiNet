@@ -6,6 +6,12 @@ import DonorView from './components/donorView'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import OrbitHandler from './orbitdb';
 
+import Portis from '@portis/web3';
+import Web3 from 'web3';
+
+const portis = new Portis('dbffa7d7-3195-4d1e-8d69-48cd35da3421', 'mainnet');
+const web3 = new Web3(portis.provider);
+
 let orbit;
 class App extends Component {
   render() {
