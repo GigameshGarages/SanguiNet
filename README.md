@@ -1,4 +1,4 @@
-# Harmony-DecentralHacks2020
+# Introduction
 Decentralised Digital Registry for the Blood Banks
 
 # Highlights
